@@ -1,0 +1,102 @@
+/* General styles (for laptop and larger screens) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  height: 100vh;
+  margin: 0;
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+.calculator {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 16px gray;
+}
+
+h4 {
+  color: rgb(197, 195, 195);
+}
+
+label, input {
+  font-size: 16px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+input {
+  padding: 8px;
+  width: calc(100% - 20px);
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(248, 93, 119);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid rgb(165, 164, 164);
+}
+
+button:hover {
+  background-color: rgb(246, 4, 45);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .calculator {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .result {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+}

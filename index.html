@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Profit Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Investment Profit Calculator</h1>
+    
+    <label class="text" for="investment">Investment Amount :</label>
+    <input class="input" type="number" id="investment" placeholder="Enter your investment" required>
+
+    <label class="text" for="profitPercent">Profit Percentage (%) :</label>
+    <input class="input" type="number" id="profitPercent" placeholder="Enter profit percentage" required>
+    <br>
+
+    <button onclick="calculateProfit()">Calculate Profit</button>
+
+    <!-- Results will be displayed here -->
+    <div id="result" class="result"></div>
+    <h4>Author: Azmat Ali</h4>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
