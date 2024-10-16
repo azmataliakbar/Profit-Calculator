@@ -16,7 +16,7 @@ function calculateProfit() {
   const profitAfter15Tax = profit - (profit * 15 / 100);
 
   // Calculate profit after 30% tax deduction for filer
-  const profitAfter30Tax = profit - (profit * 30 / 100);
+  const profitAfter30Tax = profit - (profit * 35 / 100);
 
   // Display the results
   document.getElementById("result").innerHTML = `
@@ -29,7 +29,7 @@ function calculateProfit() {
     <p> Profit: Rs.  ${profitAfter15Tax.toFixed(2)}</p>
     <p>------</p>
     <p>For Non Filer</p>
-    <p>(30% tax deduction) :</p>
+    <p>(35% tax deduction) :</p>
     <p>Profit: Rs. ${profitAfter30Tax.toFixed(2)}</p>
   `;
 }
