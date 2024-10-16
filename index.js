@@ -20,6 +20,7 @@ function calculateProfit() {
 
   // Display the results
   document.getElementById("result").innerHTML = `
+    <p>"Due Profit is on One Year Basis"</p>
     <p>Original Profit:</p>
     <p>Rs.  ${profit.toFixed(2)}</p>
     <p>------</p>
